@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="pypi">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.15">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.16">
     <root id="1">
       <ServerVersion>3.25.1</ServerVersion>
     </root>
     <schema id="2" parent="1" name="main">
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <collation id="3" parent="1" name="BINARY"/>
     <collation id="4" parent="1" name="NOCASE"/>
@@ -31,7 +30,6 @@
     <index id="17" parent="6" name="sqlite_autoindex_alembic_version_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>version_num</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="18" parent="6" name="alembic_version_pkc">
@@ -55,12 +53,10 @@
     <index id="22" parent="7" name="sqlite_autoindex_auditing_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="23" parent="7" name="ix_auditing_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="24" parent="7">
       <ColNames>id</ColNames>
@@ -95,20 +91,16 @@
     <index id="31" parent="8" name="sqlite_autoindex_downloads_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="32" parent="8" name="ix_downloads_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="33" parent="8" name="ix_downloads_package_id">
       <ColNames>package_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="34" parent="8" name="ix_downloads_release_id">
       <ColNames>release_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="35" parent="8">
       <ColNames>id</ColNames>
@@ -131,12 +123,10 @@
     <index id="39" parent="9" name="sqlite_autoindex_languages_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="40" parent="9" name="ix_languages_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="41" parent="9">
       <ColNames>id</ColNames>
@@ -159,12 +149,10 @@
     <index id="45" parent="10" name="sqlite_autoindex_licenses_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="46" parent="10" name="ix_licenses_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="47" parent="10">
       <ColNames>id</ColNames>
@@ -185,7 +173,6 @@
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id
 package_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="51" parent="11">
@@ -243,24 +230,19 @@ package_id</ColNames>
     <index id="63" parent="12" name="sqlite_autoindex_packages_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="64" parent="12" name="ix_packages_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="65" parent="12" name="ix_packages_author_email">
       <ColNames>author_email</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="66" parent="12" name="ix_packages_license">
       <ColNames>license</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="67" parent="12" name="ix_packages_last_updated">
       <ColNames>last_updated</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="68" parent="12">
       <ColNames>id</ColNames>
@@ -306,19 +288,15 @@ package_id</ColNames>
     </column>
     <index id="78" parent="13" name="ix_releases_major_ver">
       <ColNames>major_ver</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="79" parent="13" name="ix_releases_minor_ver">
       <ColNames>minor_ver</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="80" parent="13" name="ix_releases_build_ver">
       <ColNames>build_ver</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="81" parent="13" name="ix_releases_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="82" parent="13">
       <ColNames>id</ColNames>
@@ -380,20 +358,16 @@ package_id</ColNames>
     </column>
     <index id="96" parent="15" name="ix_users_email">
       <ColNames>email</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="97" parent="15" name="ix_users_hashed_password">
       <ColNames>hashed_password</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="98" parent="15" name="ix_users_created_date">
       <ColNames>created_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="99" parent="15" name="ix_users_last_login">
       <ColNames>last_login</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="100" parent="15">
       <ColNames>id</ColNames>
